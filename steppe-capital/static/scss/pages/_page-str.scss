@@ -1,0 +1,56 @@
+.page_str{
+    &__offer{
+        margin: 0 0 48px 0;
+    }
+
+
+    .tile__table{
+        margin-top: 8px;
+    }
+
+    .table_tree{
+        
+    }
+}
+
+.remodal__title{
+    margin-bottom: 12px;
+    line-height: 1.25em;
+    display: block;
+}
+
+.remodal__user-nickname{
+    font-size: 24px;
+    font-weight: 500;
+    margin-right: 12px;
+    margin-bottom: 27px;
+    line-height: 1.2em;
+
+    span:first-child{
+        margin-right: 12px;
+        display: inline-block;
+    }
+}
+
+.remodal__avatar{
+    width: 160px;
+    height: 160px;
+    margin-right: 32px;
+
+    img{
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+}
+
+.tile-sponsor__invite-contact{
+    margin-bottom: 16px;
+}
+
+.remodal__close{
+    position: absolute;
+    top: 26px;
+    right: 26px;
+    z-index: 99999;
+}

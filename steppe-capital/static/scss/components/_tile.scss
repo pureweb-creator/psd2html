@@ -1,0 +1,262 @@
+.tile{
+    padding: 32px;
+    background: #fff;
+    border-radius: 4px;
+    height: auto;
+    font-size: 16px;
+
+    p{
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    p:not(:last-child){
+        margin-bottom: 12px
+    }
+
+
+}
+
+.tile-table-wrapper{
+    overflow-x: auto;
+    width: calc(100% + 64px);
+    margin: 0 -32px;
+}
+
+.tile-table-wrapper,.cc-list{
+    &::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+        padding: 0 10px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        border-radius: 4px;
+        background: $grey3_bg;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: $grey1_stroke; 
+        border-radius: 4px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: darken($grey1_stroke,5); 
+    }
+}
+  
+.tile__caption{
+    margin-right: 64px;
+}
+
+.tile-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 16px;
+}
+  
+.tile__item{
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid $blue1_main;
+    padding: 12px;
+}
+
+.tile__img{
+    flex-shrink: 0;
+    max-width: 168px;
+    width: 100%;
+}
+
+p.tile_small{
+    font-size: 14px;
+}
+  
+.tile__title{
+    margin-bottom: 24px;
+    display: inline-block !important;
+    position: relative;
+    margin-right: 10px; 
+
+    &:hover{
+        .tooltip{
+            opacity: 1;
+            bottom: calc(100% + 5px);
+        }
+
+        svg{
+            path{
+                fill: $blue1_main;
+            }
+        }
+    }
+
+    .tooltip{
+        position: absolute;
+        left: calc(100% - 20px);
+        width: 100%;
+        bottom: calc(100% - 5px);
+        transition: all .3s ease;
+    }
+}
+
+.tile__item-title{
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: 500;
+    opacity: .6;
+    display: block;
+    position: relative;
+}
+
+.tile__item-subtitle{
+    line-height: 1.5;
+    display: inline-block;
+    margin: 0 16px 0 0;
+}
+
+.tile__number{
+    display: block;
+    font-size: 48px;
+    line-height: 1.22em;
+
+    span{
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 2.5;
+        display: inline-block;
+        margin-left: 5px;
+    }
+}
+
+.tile__item_blue2{
+    border-color: $blue2;
+}
+
+.tile__item_yellow{
+    border-color: $yellow;
+}
+
+.tile-sponsor{
+    &__avatar{
+        width: 96px;
+        height: 96px;
+        object-fit: cover;
+        border-radius: 4px;
+        margin-right: 24px;
+    }
+
+    &__name{
+        line-height: 1.5em;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 12px;
+    }
+
+    &__contact-key{
+        margin-right: 12px;
+        display: inline-block;
+        color: $txt2;
+        margin-bottom: 8px;
+    }
+}
+
+.tile__title_tree{
+    margin-bottom: 8px;
+}
+
+.with-tile{
+    margin-bottom: 47px;
+}
+
+.tile_theme_sky{
+    background-image: url("../img/pattern.svg"), linear-gradient(103.75deg, #5EB9E8 0%, #A4DEFC 100%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+    color: #fff;
+    .tile__title:hover{
+        svg path{
+            fill: #fff
+        }
+    }
+
+    .tile__item{
+        background: rgba($blue1_main, .2);
+        background-blend-mode: multiply;
+        border: 1px solid rgba($blue1_main, .2)
+    }
+}
+
+.tile__balance{
+    margin-top: 67px;
+}
+
+.tile__balance-caption{
+    margin-bottom: 12px;
+    display: block;
+}
+.tile__balance-amount{
+    font-size: 48px;
+    line-height: 1.2;
+    display: flex;
+
+    span{
+        font-size: 24px;
+        text-transform: uppercase;
+        line-height: 1.2;
+        margin-left: 16px;
+        display: block;
+        margin-top: 7px;
+    }
+}
+
+.tile__btn{
+    margin-top: 18px;
+}
+.tile__number{
+    display: flex;
+}
+.tile__number sup{
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: initial;
+    margin-left: 8px;
+    margin-top: 10px;
+}
+
+.tile-bonus{
+    grid-template-columns: 1fr 1fr;
+}
+
+.tile_no-bg{
+    background-image: linear-gradient(103.75deg, #5EB9E8 0%, #A4DEFC 100%)
+}
+
+.tile-income{
+    grid-template-columns: 1fr 1fr 2fr
+}
+
+.tile{
+    .little-title{
+        display: inline-block;
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .tile{
+        .little-title{
+            margin-bottom: 12px;
+        }
+
+        .tile__title{
+            margin-bottom: 16px;
+        }
+    }
+}

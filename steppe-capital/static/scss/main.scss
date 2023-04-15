@@ -1,0 +1,52 @@
+@import "base/variables";
+
+@import "base/reset";
+@import "base/base";
+@import "base/fonts";
+
+@import "vendors/remodal";
+@import "vendors/slick";
+@import "vendors/slick-theme";
+
+@import "components/header";
+@import "components/footer";
+@import "components/dropdown";
+@import "components/buttons";
+@import "components/sidebar";
+@import "components/inputs";
+@import "components/phone-code";
+@import "components/modal";
+@import "components/card";
+@import "components/search";
+@import "components/tooltip";
+@import "components/tile";
+@import "components/mobile-menu";
+@import "components/table";
+@import "components/mini-cart";
+@import "components/datepicker";
+@import "components/pagination";
+@import "components/tag";
+@import "components/banner";
+@import "components/alert";
+
+@import "pages/statistics";
+@import "pages/welcome";
+@import "pages/sign-up";
+@import "pages/page-main";
+@import "pages/personal-info";
+@import "pages/settings";
+@import "pages/page-str";
+@import "pages/store";
+@import "pages/article";
+@import "pages/cart";
+@import "pages/withdrawal";
+@import "pages/balance";
+@import "pages/ordering";
+@import "pages/news";
+@import "pages/docs";
+@import "pages/testing";
+
+
+@import "base/responsive";
+
+
