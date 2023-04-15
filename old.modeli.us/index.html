@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.fullpage/2.5.9/jquery.fullPage.min.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/main.min.css">
+	<title>Modeli.us</title>
+</head>
+<body>
+	<div id="cursor"></div>
+	<div class="bg-line-left bg-line"></div>
+	<div class="bg-line-right bg-line"></div>
+	<nav class="nav d-flex">
+		<ul id="menu">
+			<li data-menuanchor="firstPage">
+				<a class="button menu__link" href="#firstPage">
+				  <span class="button__line button__line--top"></span>
+				  <span class="button__line button__line--right"></span>
+				  <span class="button__line button__line--bottom"></span>
+				  <span class="button__line button__line--left"></span>
+				  Главная
+				</a>
+			</li>
+			<li data-menuanchor="secondPage">
+				<a class="button menu__link" href="#secondPage">
+					Структура
+					<span class="button__line button__line--top"></span>
+				  	<span class="button__line button__line--right"></span>
+				  	<span class="button__line button__line--bottom"></span>
+				  	<span class="button__line button__line--left"></span>
+				</a>
+			</li>
+			<li data-menuanchor="thirdPage">
+				<a class="button menu__link" href="#thirdPage">
+					Команда
+					<span class="button__line button__line--top"></span>
+				  	<span class="button__line button__line--right"></span>
+				  	<span class="button__line button__line--bottom"></span>
+				  	<span class="button__line button__line--left"></span>
+				</a>
+			</li>
+			<li data-menuanchor="fourthPage">
+				<a class="button menu__link" href="#fourthPage">
+					Оплата труда
+					<span class="button__line button__line--top"></span>
+				  	<span class="button__line button__line--right"></span>
+				  	<span class="button__line button__line--bottom"></span>
+				  	<span class="button__line button__line--left"></span>
+				</a>
+			</li>
+			<li data-menuanchor="fifthPage">
+				<a class="button menu__link" href="#fifthPage">
+					Задачи
+					<span class="button__line button__line--top"></span>
+				  	<span class="button__line button__line--right"></span>
+				  	<span class="button__line button__line--bottom"></span>
+				  	<span class="button__line button__line--left"></span>
+				</a>
+			</li>
+			<li data-menuanchor="sixthPage">
+				<a class="button menu__link" href="#sixthPage">
+					Функции
+					<span class="button__line button__line--top"></span>
+				  	<span class="button__line button__line--right"></span>
+				  	<span class="button__line button__line--bottom"></span>
+				  	<span class="button__line button__line--left"></span>
+				</a>
+			</li>
+			<li data-menuanchor="seventhPage">
+				<a class="button menu__link" href="#seventhPage">
+					Оценка
+					<span class="button__line button__line--top"></span>
+				  	<span class="button__line button__line--right"></span>
+				  	<span class="button__line button__line--bottom"></span>
+				  	<span class="button__line button__line--left"></span>
+				</a>
+			</li>
+			<li data-menuanchor="lastPage">
+				<a class="button menu__link" href="#lastPage">
+					Оставить заявку
+					<span class="button__line button__line--top"></span>
+				  	<span class="button__line button__line--right"></span>
+				  	<span class="button__line button__line--bottom"></span>
+				  	<span class="button__line button__line--left"></span>
+				</a>
+			</li>
+		</ul>
+		<div class="hamburher">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</nav>
+	<nav class="mobile-nav">
+		<ul class="mobile-nav__list">
+			<li class="mobile-nav__item" data-menuanchor="firstPage"><a href="#firstPage" class="mobile-nav__link">Главная</a></li>
+			<li class="mobile-nav__item" data-menuanchor="secondPage"><a href="#secondPage" class="mobile-nav__link">Структура</a></li>
+			<li class="mobile-nav__item" data-menuanchor="thirdPage"><a href="#thirdPage" class="mobile-nav__link">Команда</a></li>
+			<li class="mobile-nav__item" data-menuanchor="fourthPage"><a href="#fourthPage" class="mobile-nav__link">Оплата труда</a></li>
+			<li class="mobile-nav__item" data-menuanchor="fifthPage"><a href="#fifthPage" class="mobile-nav__link">Задачи</a></li>
+			<li class="mobile-nav__item" data-menuanchor="sixthPage"><a href="#sixthPage" class="mobile-nav__link">Функции</a></li>
+			<li class="mobile-nav__item" data-menuanchor="seventhPage"><a href="#seventhPage" class="mobile-nav__link">Оценка</a></li>
+			<li class="mobile-nav__item" data-menuanchor="lastPage"><a href="#lastPage" class="mobile-nav__link">Оставить заявку</a></li>
+		</ul>
+	</nav>
+	<div id="fullpage">
+		<header class="hero section" id="section0">
+			<div class="wrapper d-grid">
+				<div class="left-part">
+					<svg height="100%" width="50%" viewBox="0 0 50 100" preserveAspectRatio="none" class="blur">
+						<polygon points="0,0 50,0 50,100, 0,100" fill="rgba(0,0,0,0.1)" />
+					</svg>
+					<div class="logo">
+						<img src="img/logo2.png" alt="home logo icon" class="logo__top">
+						<img src="img/logo1.png" alt="home logo caption" class="logo__bottom">
+					</div>
+				</div>
+				<div class="right-part">
+					<div class="offer">
+						<p class="offer__text">
+							Программа MODELIUS построена на классических<br>
+							принципах управления организацией. Ниже —<br>
+							краткий обзор возможностей и<br>
+							принципов системы
+						</p>
+					</div>
+					<div class="principles">
+						<h2 class="section__title">Принципы</h2>
+						<div class="principles-slider">
+							<div class="principles-slider__item slide">
+								Структура строится от функций. Не от персон.
+							</div>
+							<div class="principles-slider__item slide">
+								Структура строится от функций. Не от персон.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<section class="structure section" id="section1">
+			<div class="container">
+				<h2 class="section__title">структура</h2>
+				<div class="section__content d-flex">
+					<div class="section__image section__part">
+						<img src="https://modeli.us/assets/img/screen/structure.jpg" alt="structure shedule image">
+					</div>
+					<div class="section__text section__part animated">
+						<div class="section__item">
+							<h3 class="item__title">
+								у многих
+							</h3>
+							<p class="item__text">
+								HR-специалисты, имеют несколько источников данных по сотрудникам. Штатные расписания, списки сотрудников в 1С и/или в локальных файлах, чертежи организационных структур в отдельных файлах, например, в «Visio». Синхронизация и актуализация разрозненных списков и схем, требует времени, внимания и усилий.
+							</p>
+						</div>
+						<div class="section__item section__item_theme_light">
+							<h3 class="item__title">
+								у нас
+							</h3>
+							<p class="item__text">
+								Список сотрудников и организационная структура — это одно целое. Произошло событие: увольнение, или прием на работу или перевод на другую должность. Событие регистрируется в программе. Список сотрудников и структура обновляются мгновенно и одновременно. Поэтому, Вы, всегда пользуетесь актуальными свежими данными. И не тратите время, на отдельную подготовку этих данных.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="crew section" id="section2">
+			<div class="container">
+				<h2 class="section__title">КОМАНДА</h2>
+				<div class="section__content d-flex">
+					<div class="section__text section__part">
+						<div class="section__item">
+							<h3 class="item__title">
+								у многих
+							</h3>
+							<p class="item__text">
+								Список сотрудников, с указанием контактных данных – находится в локальных файлах. Сотруднику трудно сориентироваться, когда нужно найти кого-то в другом отделе или регионе
+							</p>
+						</div>
+						<div class="section__item section__item_theme_light">
+							<h3 class="item__title">
+								у нас
+							</h3>
+							<p class="item__text">
+								Список сотрудников и структура находится в общем корпоративном доступе. Всегда можно определить должностное лицо, которое к которому тебе необходимо обратиться и написать или позвонить ему.
+							</p>
+						</div>
+					</div>
+					<div class="section__image section__part">
+						<img src="https://modeli.us/assets/img/screen/command.jpg" alt="structure shedule image">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="salary section" id="section3">
+			<div class="container">
+				<h2 class="section__title">ОПЛАТА ТРУДА</h2>
+				<div class="section__content d-flex">
+					<div class="section__image section__part">
+						<img src="https://modeli.us/assets/img/screen/payment.jpg" alt="structure shedule image">
+					</div>
+					<div class="section__text section__part">
+						<div class="section__item">
+							<h3 class="item__title">
+								у многих
+							</h3>
+							<p class="item__text">
+								Данные об оплате сотрудников:
+								а) разрозненны, находятся в разных папках и разных списках.
+								б) Не согласованы и не сбалансированы, в отношении трех сторон справедливости: рыночной справедливости, корпоративной справедливости, справедливости в отношении должностных требований;
+								Оплата сотрудника, при определении, не проходит балансировку и калибровку. Изначально, не задается алгоритм роста дохода сотрудника, т.е. как повысить свой доход, сотрудник не знает изначально. Он вынужден начать свой поиск таких решений.
+							</p>
+						</div>
+						<div class="section__item section__item_theme_light">
+							<h3 class="item__title">
+								у нас
+							</h3>
+							<div class="item__text">
+								<ul class="item__list">
+									<li>Определяется рыночная справедливость оплаты должностного лица</li>
+									<li>Определяется корпоративная справедливость оплаты должностного лица (корпоративная ценность должности)</li>
+									<li>Проводится сравнение оплат сотрудников, исполняющих идентичную работу, или находящихся на тождественных должностях</li>
+									<li>На базе такого анализа происходит калибровка конкретной оплаты, в масштабе других, уже существующих оплат</li>
+									<li>Выставляется горизонт роста оплаты для каждой должности и устанавливаются правила и условия роста оплаты</li>
+									<li>Оплата, которая получила свое определение, разделяется на постоянную и переменную части. Переменная часть разделяется, в свою очередь, на типы. Такие типы связываются с наполнителями - финансовыми целями и/или KPI</li>
+									<li>Для каждого сотрудника формируется контракт</li>
+									<li>Контракты всех сотрудников формируют единую базу, используя которую, легко прогнозировать анализировать, корректировать общий фонд оплаты труда компании. Все данные по прогнозному ФОТ - как на ладони</li>
+									<li>Каждый сотрудник видит свой контракт, свой горизонт роста оплаты и знает правила, при которых возможен такой рост</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="tasks section" id="section4">
+			<div class="container">
+				<h2 class="section__title">Задачи</h2>
+				<div class="section__content d-flex">
+					<div class="section__text section__part">
+						<div class="section__item">
+							<h3 class="item__title">
+								у многих
+							</h3>
+							<p class="item__text">
+								Задачи не регистрируются в единой системе, не анализируется факт и/или качество исполнения задач
+							</p>
+						</div>
+						<div class="section__item section__item_theme_light">
+							<h3 class="item__title">
+								у нас
+							</h3>
+							<div class="item__text">
+								<ul class="item__list">
+									<li>Задачи и/или поручения регистрируются. Они составляют единый список, который можно легко анализировать и контролировать исполнение</li>
+									<li>Сотрудник видит свои задачи в своем рабочем кабинете</li>
+									<li>Руководитель видит задачи своих сотрудников в своем рабочем кабинете</li>
+									<li>Построен алгоритм обращения с задачами, в зависимости от того, кто поставил задачу и от характера поставленной задачи</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="section__image section__part">
+						<img src="https://modeli.us/assets/img/screen/tasks.jpg" alt="structure shedule image">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="functions section" id="section5">
+			<div class="container">
+				<h2 class="section__title">ФУНКЦИИ</h2>
+				<div class="section__content d-flex">
+					<div class="section__image section__part animated">
+						<img src="https://modeli.us/assets/img/screen/functions.jpg" alt="structure shedule image">
+					</div>
+					<div class="section__text section__part animated-snd">
+						<div class="section__item">
+							<h3 class="item__title">
+								у многих
+							</h3>
+							<p class="item__text">
+								Функции или не прописываются. Или, наоборот, пишутся чрезвычайно подробно. Избыточно подробно. Должностные инструкции, как правило – неживой документ, где-то в недрах личного дела.
+							</p>
+						</div>
+						<div class="section__item section__item_theme_light">
+							<h3 class="item__title">
+								у нас
+							</h3>
+							<p class="item__text">
+								К каждой должности формируется перечень функций. Этот перечень систематически проверяется оценкой. Лишнее – убирается. Недостающее – вносится. Так функционал сотрудника становится живым и настоящим. Сотрудник получает необходимую ориентацию
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="assessment section" id="section6">
+			<div class="container">
+				<h2 class="section__title">Оценка</h2>
+				<div class="section__content d-flex">
+					<div class="section__text section__part">
+						<div class="section__item">
+							<h3 class="item__title">
+								у многих
+							</h3>
+							<p class="item__text">
+								Оценки сотрудника, либо нет, совсем. Либо, она – формальна. Либо оценивается что-то абстрактное, с позиций «экзаменатор – испытуемый»
+							</p>
+						</div>
+						<div class="section__item section__item_theme_light">
+							<h3 class="item__title">
+								у нас
+							</h3>
+							<div class="item__text">
+								Оценка – это ключевой инструмент управления. Каждый руководитель регулярно оценивает результаты своего сотрудника и отношение своего сотрудника, к важным вещам. Бланк оценки строится из функций, задач и монетарных целей. Оценка, в итоге, определяет размер премиального фонда сотрудника.
+							</div>
+						</div>
+					</div>
+					<div class="section__image section__part">
+						<img src="https://modeli.us/assets/img/screen/rate.jpg" alt="structure shedule image">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer section" id="section7">
+			<div class="container">
+				<h2 class="section__title section__title_theme_dark">Заявка на вход</h2>
+				<form action="#" class="order-form" role="form">
+					<div class="input-group d-grid">
+						<input type="text" class="input-group__input" placeholder="Ваше Имя">
+						<input type="tel" class="input-group__input" placeholder="Телефон">
+						<input type="email" class="input-group__input" placeholder="Email">
+						<input type="text" class="input-group__input" placeholder="Организация">
+					</div>
+					<textarea class="order-form__message" name="message" id="msg" placeholder="Сообщение"></textarea>
+					<label for="privacy-policy-checkbox" class="checkbox">
+						<input type="checkbox" class="checkbox__input" id="privacy-policy-checkbox" checked>
+						<svg class="checkbox__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+						    <path class="tick" stroke="#79745B" fill="none" stroke-linecap="round" stroke-width="4" d="M4 10l5 5 9-9"></path>
+						  </svg>
+						<span class="checkbox__body">
+							Я ознакомлен(а) с <a href="#">Политикой конфиденциальности</a>
+						</span>
+					</label>
+					<button type="button" class="order-form__button">Отправить заявку</button>
+				</form>
+			</div>
+			<div class="logo-line d-flex">
+				<img src="img/logo3.png" alt="home logo">
+				<img src="img/logo3.png" alt="home logo">
+				<img src="img/logo3.png" alt="home logo">
+				<img src="img/logo3.png" alt="home logo">
+				<img src="img/logo3.png" alt="home logo">
+				<img src="img/logo3.png" alt="home logo">
+				<img src="img/logo3.png" alt="home logo">
+			</div>
+			<p class="copyright">
+				© MODELIUS. Все права защищены
+			</p>
+		</footer>
+	</div>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.fullpage/2.5.9/vendors/jquery.slimscroll.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.fullpage/2.5.9/jquery.fullPage.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.min.js"></script>
+
+	<script>
+
+		window.addEventListener('load', function () {
+			$('#fullpage').fullpage({
+			    sectionSelector: '.section',
+			    scrollOverflow: true,
+			    slidesNavigation: true,
+				anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage' ,'lastPage'],
+					menu: '#menu',
+			});
+
+		    var O = document.getElementById('cursor'),
+		        X = 0,
+		        Y = 0,mouseX=0,mouseY=0;
+		    window.addEventListener('mousemove', function (ev) {
+		        ev = window.event || ev; 
+		        X=ev.pageX;
+		        Y=ev.pageY;
+		    });
+
+		    function move() {
+		        var p = 'px';
+		        O.style.left = X + p;
+		        O.style.top = Y + p;
+
+		        setTimeout(move, 0.1);
+		    }
+		    move();
+		});
+	</script>
+</body>
+</html>
