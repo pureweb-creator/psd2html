@@ -1,0 +1,134 @@
+@media screen and (max-width: 1166px){
+	.container{
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 1156px){
+	.section-items{
+		grid-template-columns: 1fr;
+	}
+}
+
+@media screen and (max-width: 992px){
+	.nav, .btn-group, .top-header__menu{
+		display: none;
+	}
+
+	.toggle-button{
+		display: block;
+	}
+
+	.top-header{
+		padding: 15px 0
+	}
+
+	.nav-header{
+		padding: 10px 0;
+
+		a.logo-link{
+			text-align: center;
+
+			img{
+				width: 50%;
+			}
+		}
+	}
+
+	.sewing .sewing-wrapper{
+		grid-template-columns: 1fr 1fr 1fr;
+    	grid-row-gap: 50px;
+	}
+
+	.blog-wrap{
+		grid-template-columns: 1fr 1fr;
+    	grid-row-gap: 50px;
+	}
+
+	.footer .footer-info{
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+@media screen and (max-width: 786px){
+	.section-items .section-item{
+		background-position: center top !important;
+		background-size: 100% 50% !important;
+		padding-right: 0%;
+    	padding-top: 50%;
+	}
+
+	.section-items-second .section-item:last-child{
+    	padding-top: 0%;
+	}
+
+	#popular .item{
+		margin-right: 0;
+	}
+
+	.slick-slide img{
+		margin: 0 auto;
+	}
+
+	.sewing .sewing-text-text{
+		width: auto;
+	}
+
+	.sewing .sewing-text .sewing-container{
+		padding: 42px 15px;
+	}
+
+	.blog-wrap{
+		grid-template-columns: 1fr
+	}
+
+	.sewing .sewing-wrapper, .footer .footer-info{
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.offer-header .offer-header__title{
+		width: auto;
+	}
+
+	.footer .privacy{
+		width: auto;
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 542px){
+	.offer-header .offer-header__title>.offer-header__content h1{
+		font-size: 22px;
+	}
+
+	.offer-header .offer-header__title>.offer-header__content{
+		padding: 64px 14px 43px 20px;
+	}
+
+	.section-items .section-item{
+		padding-top: 70%;
+	}
+
+	.top-header{
+		display: none;
+	}
+
+	.section-items .section-item .section-item__title{
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+
+	.section-items .section-item .section-item__title h3{
+		font-size: 16px;
+	}
+
+	.sewing .sewing-wrapper, .footer .footer-info{
+		grid-template-columns: 1fr
+	}
+}
+
+@media screen and (max-width: 992px){
+	.sticky{
+		position: static;
+	}
+}

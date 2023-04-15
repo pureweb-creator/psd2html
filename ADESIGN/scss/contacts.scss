@@ -1,0 +1,146 @@
+#contacts{
+	background: #fbfafa;
+	padding: 51px 0 84px 0;
+
+	.contacts-contacts{
+		margin-top: 50px;
+		margin-bottom: 84px;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.contacts-wrapper{
+		width: 469px;
+		background: #fff;
+		padding: 15px;
+		margin-right: 132px;
+		text-align: center;
+
+		.contacts-inner{
+			border: 1px solid #AD834C;
+			padding: 36px 84px 29px 85px;
+
+			h3{
+				font-size: 24px;
+			} 
+
+			.contacts-caption{
+				margin: 11px 0 45px 0;
+				color: #747474;
+				line-height: 19px;
+			}
+
+			.form{
+				&__input{
+					margin-bottom: 25px;
+				}
+
+				.send-btn{
+					width: 100%;
+					margin-top: 0 !important;
+				}
+			}
+
+			.checkbox-form{
+				margin: 19px auto 0 auto;
+				width: 154px;
+				color: #747474;
+				font-size: 10px;
+				line-height: 14px;
+				.label{
+					.item-caption{
+						& > a {
+							display: block;
+							color: #747474;
+							text-decoration: underline;
+						}
+					}
+
+					&::after{
+						right: 89px;
+    					top: 4px;
+					}
+
+					&::before{
+						right: 92px;
+						top: 8px;
+					}
+				}
+			}
+		}		 
+	}	
+
+	.contacts-info{
+		a {
+			color: #747474;
+			margin-right: 20px;
+			font-size: 22px;
+		}
+
+		&__item{
+			margin-bottom: 54px;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+
+			&-title{
+				font-family: Open Sans, sans-serif;
+				text-transform: uppercase;
+			}
+
+			&-text{
+				margin-top: 8px;
+				color: #747474;
+			}	
+		}
+	}
+}
+
+@media screen and (max-width: 1041px){
+	#contacts .contacts-wrapper{
+		margin-right: 50px;
+	}
+}
+
+@media screen and (max-width: 992px){
+	#contacts .contacts-contacts{
+		flex-direction: column;
+
+		.contacts-wrapper{
+			margin-bottom: 100px;
+			margin-right: 0;
+			width: 100%;
+
+			.form__input{
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 657px){
+	#contacts .contacts-wrapper{
+		.contacts-inner{
+			padding-left: 20px;
+			padding-right: 20px; 
+		}
+	}
+
+	.delivery .delivery-info-block .block__inner{
+		padding: 188px 61px 58px 61px !important;
+    	background-position: 50% 50px !important;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.delivery .delivery-info-block .block__inner{
+		padding: 188px 20px 58px 20px !important;
+	}
+
+	.delivery .delivery-info-block .block__inner .block-titles__main span{
+		display: block;
+		margin-left: 0 !important;
+		margin-top: 20px;
+	}
+}
